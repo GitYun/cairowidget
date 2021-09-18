@@ -5,6 +5,10 @@
 #include "FL/Fl.H"
 #include "FL/Fl_Device.H"
 
+#if defined (__linux__)
+#include "FL/Fl_Graphics_Driver.H"
+#endif
+
 #include "cairoglwindow.hpp"
 
 class CairoGraphicsDriver final: public Fl_Graphics_Driver
@@ -83,8 +87,8 @@ public:
 //  // --- implementation is in src/fl_color.cxx which includes src/cfg_gfx/xxx_color.cxx
 //  void color(Fl_Color c) { color_ = c; }
 //  Fl_Color color() { return color_; }
-  void color(uchar r, uchar g, uchar b) final;
-  void color(Fl_Color c) final;
+  void color(uchar r, uchar g, uchar b);
+  void color(Fl_Color c);
 
 //  // --- implementation is in src/fl_font.cxx which includes src/drivers/xxx/Fl_xxx_Graphics_Driver_font.cxx
   void draw(const char *str, int n, int x, int y) ;

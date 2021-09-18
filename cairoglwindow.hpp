@@ -1,9 +1,9 @@
 #ifndef CAIROGLWINDOW_HPP
-# define CAIROGLWINDOW_HPP
-# pragma once
+#define CAIROGLWINDOW_HPP
+// # pragma once
 
 #include "cairo.h"
-
+#include "FL/gl.h"
 #include "FL/Fl_Gl_Window.H"
 
 #include "cairosurfacedevice.hpp"

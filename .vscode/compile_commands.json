@@ -1,0 +1,66 @@
+[
+{
+  "directory": "E:\\3rdPartyLibs\\source_code\\cairowidget",
+  "arguments": ["D:\\OpenFree\\x86_64-8.1.0-release-posix-seh-rt_v6-rev0\\mingw64\\bin\\x86_64-w64-mingw32-g++", "-c", "-m64", "-std=c++2a", "-ID:\\OpenFree\\FLTK-1.3.6\\include", "-ID:\\OpenFree\\Cairo-1.16.0\\include", "-ID:\\OpenFree\\Cairo-1.16.0\\include\\cairo", "-DWIN32", "-DUSE_OPENGL32", "-D_LARGEFILE_SOURCE", "-D_LARGEFILE64_SOURCE", "-D_FILE_OFFSET_BITS=64", "-o", "build\\.objs\\cairowidget\\mingw\\x86_64\\debug\\cairoglwindow.cpp.obj", "cairoglwindow.cpp"],
+  "file": "cairoglwindow.cpp"
+},
+{
+  "directory": "E:\\3rdPartyLibs\\source_code\\cairowidget",
+  "arguments": ["D:\\OpenFree\\x86_64-8.1.0-release-posix-seh-rt_v6-rev0\\mingw64\\bin\\x86_64-w64-mingw32-g++", "-c", "-m64", "-std=c++2a", "-ID:\\OpenFree\\FLTK-1.3.6\\include", "-ID:\\OpenFree\\Cairo-1.16.0\\include", "-ID:\\OpenFree\\Cairo-1.16.0\\include\\cairo", "-DWIN32", "-DUSE_OPENGL32", "-D_LARGEFILE_SOURCE", "-D_LARGEFILE64_SOURCE", "-D_FILE_OFFSET_BITS=64", "-o", "build\\.objs\\cairowidget\\mingw\\x86_64\\debug\\cairographicsdriver.cpp.obj", "cairographicsdriver.cpp"],
+  "file": "cairographicsdriver.cpp"
+},
+{
+  "directory": "E:\\3rdPartyLibs\\source_code\\cairowidget",
+  "arguments": ["D:\\OpenFree\\x86_64-8.1.0-release-posix-seh-rt_v6-rev0\\mingw64\\bin\\x86_64-w64-mingw32-g++", "-c", "-m64", "-std=c++2a", "-ID:\\OpenFree\\FLTK-1.3.6\\include", "-ID:\\OpenFree\\Cairo-1.16.0\\include", "-ID:\\OpenFree\\Cairo-1.16.0\\include\\cairo", "-DWIN32", "-DUSE_OPENGL32", "-D_LARGEFILE_SOURCE", "-D_LARGEFILE64_SOURCE", "-D_FILE_OFFSET_BITS=64", "-o", "build\\.objs\\cairowidget\\mingw\\x86_64\\debug\\caironanosvg.cpp.obj", "caironanosvg.cpp"],
+  "file": "caironanosvg.cpp"
+},
+{
+  "directory": "E:\\3rdPartyLibs\\source_code\\cairowidget",
+  "arguments": ["D:\\OpenFree\\x86_64-8.1.0-release-posix-seh-rt_v6-rev0\\mingw64\\bin\\x86_64-w64-mingw32-g++", "-c", "-m64", "-std=c++2a", "-ID:\\OpenFree\\FLTK-1.3.6\\include", "-ID:\\OpenFree\\Cairo-1.16.0\\include", "-ID:\\OpenFree\\Cairo-1.16.0\\include\\cairo", "-DWIN32", "-DUSE_OPENGL32", "-D_LARGEFILE_SOURCE", "-D_LARGEFILE64_SOURCE", "-D_FILE_OFFSET_BITS=64", "-o", "build\\.objs\\cairowidget\\mingw\\x86_64\\debug\\cairosurfacedevice.cpp.obj", "cairosurfacedevice.cpp"],
+  "file": "cairosurfacedevice.cpp"
+},
+{
+  "directory": "E:\\3rdPartyLibs\\source_code\\cairowidget",
+  "arguments": ["D:\\OpenFree\\x86_64-8.1.0-release-posix-seh-rt_v6-rev0\\mingw64\\bin\\x86_64-w64-mingw32-g++", "-c", "-m64", "-std=c++2a", "-ID:\\OpenFree\\FLTK-1.3.6\\include", "-ID:\\OpenFree\\Cairo-1.16.0\\include", "-ID:\\OpenFree\\Cairo-1.16.0\\include\\cairo", "-DWIN32", "-DUSE_OPENGL32", "-D_LARGEFILE_SOURCE", "-D_LARGEFILE64_SOURCE", "-D_FILE_OFFSET_BITS=64", "-o", "build\\.objs\\cairowidget\\mingw\\x86_64\\debug\\cairowidget.cpp.obj", "cairowidget.cpp"],
+  "file": "cairowidget.cpp"
+},
+{
+  "directory": "E:\\3rdPartyLibs\\source_code\\cairowidget",
+  "arguments": ["D:\\OpenFree\\x86_64-8.1.0-release-posix-seh-rt_v6-rev0\\mingw64\\bin\\x86_64-w64-mingw32-g++", "-c", "-m64", "-std=c++2a", "-I.", "-ID:\\OpenFree\\FLTK-1.3.6\\include", "-ID:\\OpenFree\\Cairo-1.16.0\\include", "-ID:\\OpenFree\\Cairo-1.16.0\\include\\cairo", "-DWIN32", "-DUSE_OPENGL32", "-D_LARGEFILE_SOURCE", "-D_LARGEFILE64_SOURCE", "-D_FILE_OFFSET_BITS=64", "-o", "build\\.objs\\example2\\mingw\\x86_64\\debug\\example2.cpp.obj", "example2.cpp"],
+  "file": "example2.cpp"
+},
+{
+  "directory": "E:\\3rdPartyLibs\\source_code\\cairowidget",
+  "arguments": ["D:\\OpenFree\\x86_64-8.1.0-release-posix-seh-rt_v6-rev0\\mingw64\\bin\\x86_64-w64-mingw32-g++", "-c", "-m64", "-std=c++2a", "-I.", "-ID:\\OpenFree\\FLTK-1.3.6\\include", "-ID:\\OpenFree\\Cairo-1.16.0\\include", "-ID:\\OpenFree\\Cairo-1.16.0\\include\\cairo", "-DWIN32", "-DUSE_OPENGL32", "-D_LARGEFILE_SOURCE", "-D_LARGEFILE64_SOURCE", "-D_FILE_OFFSET_BITS=64", "-o", "build\\.objs\\example2\\mingw\\x86_64\\debug\\cairoglwindow.cpp.obj", "cairoglwindow.cpp"],
+  "file": "cairoglwindow.cpp"
+},
+{
+  "directory": "E:\\3rdPartyLibs\\source_code\\cairowidget",
+  "arguments": ["D:\\OpenFree\\x86_64-8.1.0-release-posix-seh-rt_v6-rev0\\mingw64\\bin\\x86_64-w64-mingw32-g++", "-c", "-m64", "-std=c++2a", "-I.", "-ID:\\OpenFree\\FLTK-1.3.6\\include", "-ID:\\OpenFree\\Cairo-1.16.0\\include", "-ID:\\OpenFree\\Cairo-1.16.0\\include\\cairo", "-DWIN32", "-DUSE_OPENGL32", "-D_LARGEFILE_SOURCE", "-D_LARGEFILE64_SOURCE", "-D_FILE_OFFSET_BITS=64", "-o", "build\\.objs\\example2\\mingw\\x86_64\\debug\\caironanosvg.cpp.obj", "caironanosvg.cpp"],
+  "file": "caironanosvg.cpp"
+},
+{
+  "directory": "E:\\3rdPartyLibs\\source_code\\cairowidget",
+  "arguments": ["D:\\OpenFree\\x86_64-8.1.0-release-posix-seh-rt_v6-rev0\\mingw64\\bin\\x86_64-w64-mingw32-g++", "-c", "-m64", "-std=c++2a", "-I.", "-ID:\\OpenFree\\FLTK-1.3.6\\include", "-ID:\\OpenFree\\Cairo-1.16.0\\include", "-ID:\\OpenFree\\Cairo-1.16.0\\include\\cairo", "-DWIN32", "-DUSE_OPENGL32", "-D_LARGEFILE_SOURCE", "-D_LARGEFILE64_SOURCE", "-D_FILE_OFFSET_BITS=64", "-o", "build\\.objs\\example2\\mingw\\x86_64\\debug\\cairosurfacedevice.cpp.obj", "cairosurfacedevice.cpp"],
+  "file": "cairosurfacedevice.cpp"
+},
+{
+  "directory": "E:\\3rdPartyLibs\\source_code\\cairowidget",
+  "arguments": ["D:\\OpenFree\\x86_64-8.1.0-release-posix-seh-rt_v6-rev0\\mingw64\\bin\\x86_64-w64-mingw32-g++", "-c", "-m64", "-std=c++2a", "-I.", "-ID:\\OpenFree\\FLTK-1.3.6\\include", "-ID:\\OpenFree\\Cairo-1.16.0\\include", "-ID:\\OpenFree\\Cairo-1.16.0\\include\\cairo", "-DWIN32", "-DUSE_OPENGL32", "-D_LARGEFILE_SOURCE", "-D_LARGEFILE64_SOURCE", "-D_FILE_OFFSET_BITS=64", "-o", "build\\.objs\\example2\\mingw\\x86_64\\debug\\cairographicsdriver.cpp.obj", "cairographicsdriver.cpp"],
+  "file": "cairographicsdriver.cpp"
+},
+{
+  "directory": "E:\\3rdPartyLibs\\source_code\\cairowidget",
+  "arguments": ["D:\\OpenFree\\x86_64-8.1.0-release-posix-seh-rt_v6-rev0\\mingw64\\bin\\x86_64-w64-mingw32-g++", "-c", "-m64", "-std=c++2a", "-I.", "-ID:\\OpenFree\\FLTK-1.3.6\\include", "-ID:\\OpenFree\\Cairo-1.16.0\\include", "-ID:\\OpenFree\\Cairo-1.16.0\\include\\cairo", "-DWIN32", "-DUSE_OPENGL32", "-D_LARGEFILE_SOURCE", "-D_LARGEFILE64_SOURCE", "-D_FILE_OFFSET_BITS=64", "-o", "build\\.objs\\example2\\mingw\\x86_64\\debug\\cairowidget.cpp.obj", "cairowidget.cpp"],
+  "file": "cairowidget.cpp"
+},
+{
+  "directory": "E:\\3rdPartyLibs\\source_code\\cairowidget",
+  "arguments": ["D:\\OpenFree\\x86_64-8.1.0-release-posix-seh-rt_v6-rev0\\mingw64\\bin\\x86_64-w64-mingw32-g++", "-c", "-m64", "-o", "build\\.objs\\example3\\mingw\\x86_64\\debug\\example3.cpp.obj", "example3.cpp"],
+  "file": "example3.cpp"
+},
+{
+  "directory": "E:\\3rdPartyLibs\\source_code\\cairowidget",
+  "arguments": ["D:\\OpenFree\\x86_64-8.1.0-release-posix-seh-rt_v6-rev0\\mingw64\\bin\\x86_64-w64-mingw32-g++", "-c", "-m64", "-o", "build\\.objs\\example1\\mingw\\x86_64\\debug\\example1.cpp.obj", "example1.cpp"],
+  "file": "example1.cpp"
+}]

@@ -1,7 +1,16 @@
 #include "FL/Fl.H"
 #include "FL/fl_draw.H"
+#include "FL/platform.H"
 
-#include "cairo-gl.h"
+#define CAIRO_HAS_GL_SURFACE 1
+
+#if defined (_WIN32) || defined (__WIN32)
+#define CAIRO_HAS_WGL_FUNCTIONS 1
+#else
+#define CAIRO_HAS_GLX_FUNCTIONS 1
+#endif
+
+#include "cairo/cairo-gl.h"
 
 #include <cassert>
 
@@ -43,16 +52,26 @@ void Cairo_Gl_Window::draw()
   {
     Fl_Window::make_current();
 
-    //
-    auto const device(cairo_glx_device_create(fl_display,
+#if defined (_WIN32) || defined (__WIN32)
+    auto const device(cairo_wgl_device_create((HGLRC)fl_display));
+    cairo_gl_device_set_thread_aware(device, false);
+#else
+    auto const device(cairo_glx_device_create(fl_display,                      
       static_cast<GLXContext>(context())));
     cairo_gl_device_set_thread_aware(device, false);
+#endif
     assert(cairo_device_status(device) == CAIRO_STATUS_SUCCESS);
 
-    //
     cairo_destroy(cr);
+
+#if defined (_WIN32) || defined (__WIN32)
+    cr_ = cr = cairo_create(surf_ = surf =
+      cairo_gl_surface_create(device, CAIRO_CONTENT_COLOR_ALPHA, w, h));
+#else
     cr_ = cr = cairo_create(surf_ = surf =
       cairo_gl_surface_create_for_window(device, fl_window, w, h));
+#endif
+
     cairo_device_destroy(device);
     cairo_surface_destroy(surf);
     assert(CAIRO_STATUS_SUCCESS == cairo_surface_status(surf_));

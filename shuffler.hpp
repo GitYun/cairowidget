@@ -6,7 +6,9 @@
 
 #include <cstdint>
 
+#if __cplusplus > 201703L
 #include <bit>
+#endif
 
 namespace shuffler
 {
@@ -32,12 +34,17 @@ constexpr T shuffle2(T const i, std::index_sequence<J...>) noexcept
 template <std::size_t ...I, typename T>
 constexpr T shuffle(T const i) noexcept
 {
+#if defined (_WIN32) || defined (__WIN32)
+  return shuffler::detail::shuffle1<I...>(i,
+        std::make_index_sequence<sizeof...(I)>());
+#else
   if constexpr (std::endian::little == std::endian::native)
     return shuffler::detail::shuffle1<I...>(i,
       std::make_index_sequence<sizeof...(I)>());
   else if constexpr (std::endian::big == std::endian::native)
     return shuffler::detail::shuffle2<I...>(i,
       std::make_index_sequence<sizeof...(I)>());
+#endif
 }
 
 }

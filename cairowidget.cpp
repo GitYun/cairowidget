@@ -2,7 +2,11 @@
 
 #include "cairo/cairo.h"
 
+#if defined (_WIN32) || defined (__WIN32)
+#include <algorithm>
+#else
 #include <execution>
+#endif
 
 #include <memory>
 
@@ -89,9 +93,14 @@ void CairoWidget::draw()
   //
   auto const src(reinterpret_cast<std::uint32_t*>(d));
 
+#if defined (_WIN32) || defined (__WIN32)
+  std::transform(src, src + pixels_, src,
+    (std::uint32_t(&)(std::uint32_t))(shuffler::shuffle<2, 1, 0>));
+#else
   // ARGB -> RGBx (selects bytes and places them MSB -> LSB),
   std::transform(std::execution::unseq, src, src + pixels_, src,
     (std::uint32_t(&)(std::uint32_t))(shuffler::shuffle<2, 1, 0>));
+#endif
 
   //cairo_surface_mark_dirty(surf);
 

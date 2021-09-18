@@ -1,6 +1,6 @@
-#include "FL/Fl.h"
+#include "FL/Fl.H"
 
-#include "Fl/Fl_Box.h"
+#include "FL/Fl_Box.H"
 
 #include "cairo/cairo.h"
 
@@ -28,7 +28,11 @@ void example(cairo_t* const cr, int const w, int const h) noexcept
 //////////////////////////////////////////////////////////////////////////////
 int main()
 {
+#if defined (_WIN32) || defined (__WIN32)
   image = nsvgParseFromFile("nanosvg/example/23.svg", "px", 96);
+#else
+  image = nsvgParseFromFile("/mnt/e/3rdPartyLibs/source_code/cairowidget/nanosvg/example/23.svg", "px", 96);
+#endif
 
   auto const win(new Cairo_Gl_Window(724, 700));
   win->resizable(*win);
